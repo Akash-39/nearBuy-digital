@@ -1,7 +1,7 @@
 {
   "name": "cc-commerce",
   "version": "1.0.0",
-  "description": "Website for computer-center",
+  "description": "Website for SpiceDigital",
   "main": "server.js",
   "type": "module",
   "scripts": {
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shinigamirex888/ComputerCenterCommerce.git"
+    "url": "git+https://github.com/Ujjwalbhardwaj/spiceDigital.git"
   },
-  "author": "Snehil Mishra",
+  "author": "Ujjwal Bhardwaj",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shinigamirex888/ComputerCenterCommerce/issues"
+    "url": "https://github.com/Ujjwalbhardwaj/spiceDigital/issues"
   },
-  "homepage": "https://github.com/shinigamirex888/ComputerCenterCommerce#readme",
+  "homepage": "https://github.com/Ujjwalbhardwaj/spiceDigital#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
