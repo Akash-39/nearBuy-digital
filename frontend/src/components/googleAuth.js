@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 import { GoogleLogin } from 'react-google-login';
 import axios from "axios";
 import { login,register } from "../actions/userActions";
@@ -37,7 +37,7 @@ function Login() {
         onSuccess={onSuccess}
         onFailure={onFailure}
         cookiePolicy={'single_host_origin'}
-        style={{ marginTop: '100px' }}
+        style={{ marginTop : '100px' }}
         //isSignedIn={true}
       />
     </div>

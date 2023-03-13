@@ -6,7 +6,7 @@ import Footer from './components/Footer'
 import HomeScreen from './screens/HomeScreen'
 import ProductScreen from './screens/ProductScreen'
 import CartScreen from './screens/CartScreen'
-import LoginScreen from './screens/LoginScreen'
+import LoginScreen from './screens/LoginScreen.js'
 import RegisterScreen from './screens/RegisterScreen'
 import ProfileScreen from './screens/ProfileScreen'
 import ShippingScreen from './screens/ShippingScreen'
@@ -18,7 +18,7 @@ import UserEditScreen from './screens/UserEditScreen'
 import ProductListScreen from './screens/ProductListScreen'
 import ProductEditScreen from './screens/ProductEditScreen'
 import OrderListScreen from './screens/OrderListScreen'
-import Chat from './components/Chat'
+// import Chat from './components/Chat'
 
 
 
@@ -26,7 +26,7 @@ const App = () => {
   return (
     <Router>
       <Header />
-      <Chat/>
+      
       <main className='py-3'>
         <Container>
           <Route path='/order/:id' component={OrderScreen} />

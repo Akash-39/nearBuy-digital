@@ -4,7 +4,7 @@ import { Form, Button, Row, Col } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
-import GoogleAuth from '../components/googleAuth'
+// import GoogleAuth from '../components/googleAuth'
 import FormContainer from '../components/FormContainer'
 import { login } from '../actions/userActions'
 import Goku from '../pics/goku.png'
@@ -63,7 +63,7 @@ const LoginScreen = ({ location, history }) => {
           Sign In
         </Button>
         <Button variant="link" disabled>Or</Button>
-      <Button variant="link"><GoogleAuth/></Button>
+      {/* <Button variant="link"><GoogleAuth/></Button> */}
  
      
       

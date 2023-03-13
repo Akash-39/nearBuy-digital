@@ -7,9 +7,9 @@ import SearchBox from './SearchBox'
 import "./header.css"
 
 
-//import GoogleAuth from './googleAuth'
+// import GoogleAuth from './googleAuth'
 import { logout } from '../actions/userActions'
-import Logo from '../pics/logo.png'
+// import Logo from '../pics/logo.png'
 
 const Header = () => {
   const dispatch = useDispatch()
@@ -31,7 +31,7 @@ const Header = () => {
         <Container   >
           <LinkContainer to='/'>
             <Navbar.Brand>
-         <h4>𝕊𝕡𝕚𝕔𝕖 𝔻𝕚𝕘𝕚𝕥𝕒𝕝</h4>
+         <h4>nearBuy 𝔻𝕚𝕘𝕚𝕥𝕒𝕝</h4>
            
             </Navbar.Brand>
           </LinkContainer>
@@ -40,14 +40,14 @@ const Header = () => {
           <Route render={({ history }) => <SearchBox history={history} />} />
           {/* <GoogleAuth/> */}
             <Nav classname ='khela' className='ml-auto'>
-              <LinkContainer to='/cart'  style={{ marginLeft: "20px" }}>
+              <LinkContainer to='/cart'  style={{ marginLeft : "20px" }}>
                 <Nav.Link>
                   <i className='fas fa-shopping-cart'></i> Cart
                 </Nav.Link>
               </LinkContainer>
               {userInfo ? (           
                 <NavDropdown title={demo} id='username'>
-                  <LinkContainer to='/profile' style={{ marginLeft: "20px" }}>
+                  <LinkContainer to='/profile' style={{ marginLeft : "20px" }}>
                     <NavDropdown.Item><i class="fas fa-user-edit"></i>  Profile</NavDropdown.Item>
                   </LinkContainer>
                   <NavDropdown.Item onClick={logoutHandler}>
@@ -56,7 +56,7 @@ const Header = () => {
                 </NavDropdown>
                
               ) : (
-                <LinkContainer to='/login'  style={{ marginLeft: "20px" }}>
+                <LinkContainer to='/login'  style={{ marginLeft : "20px" }}>
                   <Nav.Link>
                   
                     <i className='fas fa-user'></i> Sign In

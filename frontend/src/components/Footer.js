@@ -1,9 +1,9 @@
 import React from "react";
 import "./footer.css";
-import Logo from '../pics/logo.png'
+// import Logo from '../pics/logo.png'
 //import "bootstrap/dist/css/bootstrap.min.css";
 //import "font-awesome/css/font-awesome.min.css";
-//import Logo from "../kurakoo-logo.png";
+// import Logo from "../kurakoo-logo.png";
 
 function Footer() {
     return (
@@ -20,7 +20,7 @@ function Footer() {
                                 <div className="cta-text">
                                
                                     <h4>Find us</h4>
-                                    <span>Dakaniya Station Rd, Kota</span>
+                                    <span>Amity University, Patna</span>
                                 </div>
                             </div>
                         </div>
@@ -38,7 +38,7 @@ function Footer() {
                                 <i className="fa fa-envelope-open"></i>
                                 <div className="cta-text">
                                     <h4>Mail us</h4>
-                                    <span>Ujjwal2346@gmail.com</span>
+                                    <span>akash.kumar51@s.amity.edu</span>
                                 </div>
                             </div>
                         </div>
@@ -55,7 +55,7 @@ function Footer() {
                                 </div>
                                 <div className="footer-text">
                                     <p>
-                                        Get high Quality,Original Smartphones right at your door from us
+                                        Get high Quality,Original Smartphones right at your door from your nearest shop.
                                     </p>
                                 </div>
                                 <div className="footer-social-icon">
@@ -128,7 +128,7 @@ function Footer() {
                         <div className="col-xl-6 col-lg-6 text-center text-lg-left">
                             <div className="copyright-text">
                                 <p>
-                                    &copy; Spice Digital | All Right Reserved |
+                                    &copy; nearBuy Digital | All Right Reserved |
                                     Terms Of Service | Privacy
                                 </p>
                             </div>
