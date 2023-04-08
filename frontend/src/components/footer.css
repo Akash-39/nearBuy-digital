@@ -56,6 +56,7 @@ width: 75px;
     font-size: 14px;
     color: #e1e6fa;
     line-height: 28px;
+    width: max-content;
 }
 .footer-social-icon span {
     color: #e7f1dc;
