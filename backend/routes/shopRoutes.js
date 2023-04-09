@@ -6,7 +6,7 @@ import {
   getShopById,
   deleteShop,
   createShop,
-  updateShop,
+  updateShop, 
 } from '../controllers/shopController.js'
 
 router.route('/').get(getShops).post(protect, admin, createShop)

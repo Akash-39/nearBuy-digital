@@ -6,7 +6,9 @@ import morgan from 'morgan'
 import { notFound, errorHandler } from './middleware/errorMiddleware.js'
 import connectDB from './config/db.js'
 import products from './data/products.js'
+import shops from './data/shops.js'
 import productRoutes from './routes/productRoutes.js'
+import shopRoutes from './routes/shopRoutes.js'
 import userRoutes from './routes/userRoutes.js'
 import orderRoutes from './routes/orderRoutes.js'
 import uploadRoutes from './routes/uploadRoutes.js'
@@ -32,15 +34,25 @@ app.get('./api/products',(req,res)=>{
   res.json(products)
 })
 
+app.get('./api/shops',(req,res)=>{
+  res.json(shops)
+})
+
 app.get('./api/products/:id',(req,res)=>{
   const product=products.find((p)=>p._id===req.params.id)
   res.json(product)
+})
+
+app.get('./api/shops/:id',(req,res)=>{
+  const shop=shops.find((p)=>p._id===req.params.id)
+  res.json(shop)
 })
 
 
 
 
 app.use('/api/products', productRoutes)
+app.use('/api/shops', shopRoutes)
 app.use('/api/users', userRoutes)
 app.use('/api/orders', orderRoutes)
 app.use('/api/upload', uploadRoutes)

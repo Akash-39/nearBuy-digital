@@ -208,7 +208,7 @@ const OrderScreen = ({ match }) => {
                     <Loader />
                   ) : (
                     <PayPalButton
-                      amount={order.totalPrice/75}
+                      amount={order.totalPrice/82}
                       onSuccess={successPaymentHandler}
                       onclick={() => removeFromCartHandler(order.ItemId)}
                     />
