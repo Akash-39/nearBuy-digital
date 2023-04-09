@@ -12,9 +12,9 @@ const Meta = ({ title, description, keywords }) => {
 }
 
 Meta.defaultProps = {
-  title: 'Spice Digital',
+  title: 'nearBuy Digital',
   description: 'We sell Authentic products at best price',
-  keywords: 'Mobiles, buy Mobiles, Smartphones',
+  keywords: 'Grab Your Latest Smartphones Now!',
 }
 
 export default Meta

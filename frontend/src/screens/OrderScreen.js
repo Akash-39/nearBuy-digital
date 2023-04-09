@@ -16,6 +16,11 @@ import {
   ORDER_DELIVER_RESET,
 } from '../constants/orderConstants'
 
+
+import { removeFromCart } from '../actions/cartActions'
+
+
+
 const OrderScreen = ({ match }) => {
   const orderId = match.params.id
 
@@ -34,6 +39,11 @@ const OrderScreen = ({ match }) => {
 
   const userLogin = useSelector((state) => state.userLogin)
   const { userInfo } = userLogin
+
+
+  const removeFromCartHandler = (id) => {
+    dispatch(removeFromCart(id))
+  }
 
   if (!loading) {
     //   Calculate prices
@@ -198,8 +208,9 @@ const OrderScreen = ({ match }) => {
                     <Loader />
                   ) : (
                     <PayPalButton
-                      amount={order.totalPrice}
+                      amount={order.totalPrice/75}
                       onSuccess={successPaymentHandler}
+                      onclick={() => removeFromCartHandler(order.ItemId)}
                     />
                   )}
                 </ListGroup.Item>

@@ -81,7 +81,7 @@ const UserEditScreen = ({ match, history }) => {
                 onChange={(e) => setEmail(e.target.value)}
               ></Form.Control>
             </Form.Group>
-
+{/* 
             <Form.Group controlId='isadmin'>
               <Form.Check
                 type='checkbox'
@@ -89,7 +89,7 @@ const UserEditScreen = ({ match, history }) => {
                 checked={isAdmin}
                 onChange={(e) => setIsAdmin(e.target.checked)}
               ></Form.Check>
-            </Form.Group>
+            </Form.Group> */}
 
             <Button type='submit' variant='primary'>
               Update

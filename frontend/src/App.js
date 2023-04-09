@@ -17,8 +17,10 @@ import UserListScreen from './screens/UserListScreen'
 import UserEditScreen from './screens/UserEditScreen'
 import ProductListScreen from './screens/ProductListScreen'
 import ProductEditScreen from './screens/ProductEditScreen'
+import ShopListScreen from './screens/ShopListScreen'
+import ShopEditScreen from './screens/ShopEditScreen'
 import OrderListScreen from './screens/OrderListScreen'
-// import Chat from './components/Chat'
+// import Chat from './components/ChatShop
 
 
 
@@ -46,6 +48,12 @@ const App = () => {
             component={ProductListScreen}
             exact
           />
+           <Route
+            path='/admin/shoplist'
+            component={ShopListScreen}
+            exact
+          />
+           <Route path='/admin/shop/:id/edit' component={ShopEditScreen} />
           <Route
             path='/admin/productlist/:pageNumber'
             component={ProductListScreen}

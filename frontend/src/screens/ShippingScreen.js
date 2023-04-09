@@ -50,7 +50,7 @@ const ShippingScreen = ({ history }) => {
           ></Form.Control>
         </Form.Group>
 
-        <Form.Group controlId='city'>
+        <Form.Group controlId='state'>
           <Form.Label>State</Form.Label>
           <Form.Control
             type='text'
